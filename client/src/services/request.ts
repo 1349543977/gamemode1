@@ -1,7 +1,7 @@
 import Taro from '@tarojs/taro';
 import { storage } from '../utils/storage';
 
-const BASE_URL = process.env.TARO_APP_API_URL || 'http://localhost:8000/api/v1';
+const BASE_URL = process.env.TARO_APP_API_URL || '/api/v1';
 
 interface RequestOptions {
   url: string;
