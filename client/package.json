@@ -1,0 +1,50 @@
+{
+  "name": "life-simulation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "虚拟现实人生养成游戏",
+  "templateInfo": {
+    "name": "default",
+    "typescript": true,
+    "css": "scss"
+  },
+  "scripts": {
+    "build:weapp": "taro build --type weapp",
+    "build:h5": "taro build --type h5",
+    "dev:weapp": "taro build --type weapp --watch",
+    "dev:h5": "taro build --type h5 --watch"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "dependencies": {
+    "@tanstack/react-query": "^5.51.1",
+    "@tarojs/components": "4.0.7",
+    "@tarojs/helper": "4.0.7",
+    "@tarojs/plugin-framework-react": "4.0.7",
+    "@tarojs/plugin-platform-h5": "4.0.7",
+    "@tarojs/plugin-platform-weapp": "4.0.7",
+    "@tarojs/react": "4.0.7",
+    "@tarojs/runtime": "4.0.7",
+    "@tarojs/shared": "4.0.7",
+    "@tarojs/taro": "4.0.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@babel/preset-react": "^7.29.7",
+    "@babel/preset-typescript": "^7.29.7",
+    "@babel/runtime": "^7.24.8",
+    "@tarojs/cli": "4.0.7",
+    "@tarojs/webpack5-runner": "4.0.7",
+    "@types/react": "^18.3.3",
+    "babel-preset-taro": "^4.2.0",
+    "sass": "^1.77.8",
+    "typescript": "^5.5.3"
+  }
+}

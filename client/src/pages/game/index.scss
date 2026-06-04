@@ -1,0 +1,18 @@
+.game-page {
+  min-height: 100vh; display: flex; flex-direction: column; background: var(--color-background);
+  &__header { padding: var(--spacing-md); background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); color: #fff; }
+  &__char-info { display: flex; align-items: baseline; gap: var(--spacing-sm); }
+  &__char-name { font-size: var(--font-xl); font-weight: 700; }
+  &__char-age { font-size: var(--font-md); opacity: 0.9; }
+  &__char-stage { font-size: var(--font-sm); opacity: 0.8; margin-top: var(--spacing-xs); display: block; }
+  &__events { padding: var(--spacing-md); }
+  &__events-title { font-size: var(--font-lg); font-weight: 600; color: var(--color-text); display: block; margin-bottom: var(--spacing-md); }
+  &__content { flex: 1; padding: var(--spacing-md); }
+  &__map { display: flex; align-items: center; justify-content: center; min-height: 400px; background: var(--color-surface); border-radius: var(--radius-lg); }
+  &__map-placeholder { font-size: var(--font-lg); color: var(--color-text-secondary); }
+  &__footer { padding: var(--spacing-md); background: var(--color-surface); box-shadow: 0 -2px 10px rgba(0,0,0,0.05); }
+  &__tabs { display: flex; justify-content: space-around; margin-bottom: var(--spacing-md); }
+  &__tab { padding: var(--spacing-sm) var(--spacing-md); font-size: var(--font-sm); color: var(--color-text-secondary); border-radius: var(--radius-md);
+    &--active { background: var(--color-primary); color: #fff; }
+  }
+}
