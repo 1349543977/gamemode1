@@ -13,7 +13,10 @@ export default defineConfig({
   sourceRoot: 'src',
   outputRoot: 'dist',
   plugins: ['@tarojs/plugin-framework-react'],
-  defineConstants: {},
+  defineConstants: {
+    'process.env.TARO_APP_API_URL': JSON.stringify(process.env.TARO_APP_API_URL || ''),
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
+  },
   copy: { patterns: [], options: {} },
   framework: 'react',
   compiler: {
